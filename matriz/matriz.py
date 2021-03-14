@@ -1,15 +1,15 @@
 import random as rd
 
 
-def matriz(rango=10, dim=5):
+def matriz(rango=5, dim=5):
     mat = [[rd.randint(1, rango) for e in range(dim)] for e in range(dim)]
 
-    mat = [[0, 0, 0, 0, 0], [3, 5, 4, 3, 6], [3, 5, 4, 2, 1], [3, 1, 6, 2, 1], [3, 7, 9, 1, 5]]
+    # mat = [[0, 0, 0, 0, 0], [3, 5, 4, 3, 6], [3, 5, 4, 2, 1], [3, 1, 6, 2, 1], [3, 7, 9, 1, 5]]
 
     vertical = versec(mat)
     horizontal = horsec(mat)
 
-    return mat
+    return vertical, horizontal
 
 
 def horsec(mat):
@@ -60,6 +60,9 @@ def versec(mat):
         sec.clear()
 
     return coord_secs
+
+def findsec():
+    pass
 
 
 A = matriz()
