@@ -16,6 +16,13 @@ class circulo:
             print('El radio del circulo no puede ser menor a cero')
             exit()
 
+    def __str__(self):
+        return 'El radio del circulo es: {:.2f} \nEl area del circulo es: {:.2f} ' \
+               '\nEl perimetro del circulo es: {:.2f}'.format(self.__radio, self.area(), self.perimetro())
+
+    def __mul__(self, other):
+        return circulo(self.__radio * other)
+
     @property
     def radio(self):
         return self.__radio
@@ -33,7 +40,9 @@ class circulo:
     def perimetro(self):
         return 2*math.pi*self.__radio
 
-circulo1 = circulo(-7)
+
+circulo1 = circulo(7) * 2
 # print(circulo1)
-circulo1.radio = -1
+# circulo1.radio = -1
+print(circulo1)
 print('fin')
