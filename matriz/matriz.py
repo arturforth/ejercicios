@@ -61,9 +61,3 @@ def versec(mat):
 
     return coord_secs
 
-def findsec():
-    pass
-
-
-A = matriz()
-A
