@@ -35,10 +35,3 @@ class circulo:
 
     def perimetro(self):
         return 2*math.pi*self.__radio
-
-
-# # circulo1 = circulo(7) * 2
-# circulo1 = circulo(-2)
-# # print(circulo1)
-# print(circulo1)
-print('fin')
