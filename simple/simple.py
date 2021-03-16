@@ -2,7 +2,7 @@ import random as rd
 
 
 def gendir(longitud=10):
-
+    rd.seed(0)
     res = []
 
     for i in range(longitud):
@@ -26,8 +26,6 @@ def sortdir(lista):
     return lista
 
 
-rv = gendir()
-
-rv_sorted = sortdir(rv)
-
-print('Fin')
+# rv = gendir()
+#
+# rv_sorted = sortdir(rv)
