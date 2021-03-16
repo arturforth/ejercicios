@@ -9,12 +9,8 @@ class circulo:
     def __init__(self, radio):
         self.__radio = radio
 
-        try:
-            if self.__radio < 0:
-                raise RadioMenorACeroError
-        except RadioMenorACeroError:
-            print('El radio del circulo no puede ser menor a cero')
-            exit()
+        if self.__radio < 0:
+            raise RadioMenorACeroError('El radio del circulo no puede ser menor a cero')
 
     def __str__(self):
         return 'El radio del circulo es: {:.2f} \nEl area del circulo es: {:.2f} ' \
@@ -41,8 +37,8 @@ class circulo:
         return 2*math.pi*self.__radio
 
 
-circulo1 = circulo(7) * 2
+# # circulo1 = circulo(7) * 2
+# circulo1 = circulo(-2)
+# # print(circulo1)
 # print(circulo1)
-# circulo1.radio = -1
-print(circulo1)
 print('fin')
