@@ -23,9 +23,12 @@ def sortdir(lista):
                 lista[j] = b
                 lista[j+1] = a
 
+    print('El id de la persona mas joven es: {}'.format(lista[n-1]['id']))
+    print('El id de la persona mas vieja es: {}'.format(lista[0]['id']))
+
     return lista
 
 
-# rv = gendir()
+rv = gendir()
 #
-# rv_sorted = sortdir(rv)
+rv_sorted = sortdir(rv)
