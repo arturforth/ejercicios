@@ -17,7 +17,8 @@ class circulo:
                '\nEl perimetro del circulo es: {:.2f}'.format(self.__radio, self.area(), self.perimetro())
 
     def __mul__(self, other):
-        return circulo(self.__radio * other)
+        if other > 0:
+            return circulo(self.__radio * other)
 
     @property
     def radio(self):
@@ -35,3 +36,4 @@ class circulo:
 
     def perimetro(self):
         return 2*math.pi*self.__radio
+
