@@ -1,8 +1,8 @@
 import random as rd
 
 
-def gendir(longitud=10):
-
+def gendic(longitud=10):
+    rd.seed(0)
     res = []
 
     for i in range(longitud):
@@ -11,7 +11,7 @@ def gendir(longitud=10):
     return res
 
 
-def sortdir(lista):
+def sortdic(lista):
 
     n = len(lista)
 
@@ -23,11 +23,12 @@ def sortdir(lista):
                 lista[j] = b
                 lista[j+1] = a
 
+    print('El id de la persona mas joven es: {}'.format(lista[n-1]['id']))
+    print('El id de la persona mas vieja es: {}'.format(lista[0]['id']))
+
     return lista
 
 
-rv = gendir()
-
-rv_sorted = sortdir(rv)
-
-print('Fin')
+# rv = gendic()
+# # #
+# rv_sorted = sortdic(rv)
