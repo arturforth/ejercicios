@@ -1,7 +1,7 @@
 import random as rd
 
 
-def gendir(longitud=10):
+def gendic(longitud=10):
     rd.seed(0)
     res = []
 
@@ -11,7 +11,7 @@ def gendir(longitud=10):
     return res
 
 
-def sortdir(lista):
+def sortdic(lista):
 
     n = len(lista)
 
@@ -29,6 +29,6 @@ def sortdir(lista):
     return lista
 
 
-rv = gendir()
-#
-rv_sorted = sortdir(rv)
+# rv = gendic()
+# # #
+# rv_sorted = sortdic(rv)
